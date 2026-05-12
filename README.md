@@ -14,12 +14,14 @@ A Claude Code skill that runs a **72-hour viral radar** across Reddit, X, TikTok
 
 ![Example: AI Coding & Productivity Agents — 72h Viral Radar](examples/ai-coding-agents-72h-radar.png)
 
+**[→ Live HTML version with clickable links](https://htmlpreview.github.io/?https://github.com/iharnoor/last72hours-skill/blob/main/examples/ai-coding-agents-72h-radar.html)** · or [view source](examples/ai-coding-agents-72h-radar.html)
+
 ## What you get
 
 1. A 72-hour scrape of the topic across 7 sources, saved as Markdown
-2. An auto-built Paper.design artboard: editorial scorecard with hero card, top-viral grid, narrative clusters, and source-coverage footer
-3. A clickable links appendix
-4. A 2× PNG export
+2. A **self-contained HTML mirror** with every source as a clickable link — shareable in Slack/email/DMs
+3. (Optional, if Paper Desktop is running) an auto-built Paper.design artboard mirroring the HTML
+4. A 2× PNG export from Paper
 
 ## Install
 

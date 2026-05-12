@@ -1,0 +1,464 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>AI Coding &amp; Productivity Agents — 72h Viral Radar · /last72hours</title>
+<meta name="description" content="What people are saying about AI coding and productivity agents in the last 72 hours — Reddit, X, TikTok, Instagram, Hacker News, GitHub. Editorial-scorecard format." />
+<meta name="generator" content="/last72hours · https://github.com/iharnoor/last72hours-skill" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter+Tight:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" />
+<style>
+  :root {
+    --ink: #0A0A0A;
+    --mute: #6B6B6B;
+    --hair: #E5E5E5;
+    --panel: #F7F7F5;
+    --cobalt: #0029FF;
+    --x: #000000;
+    --reddit: #FF4500;
+    --hn: #FF6600;
+    --ig: #E1306C;
+    --tiktok: #25F4EE;
+    --github: #181717;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; background: #FFFFFF; color: var(--ink); }
+  body {
+    font-family: 'Inter Tight', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  a { color: inherit; }
+  a:hover { color: var(--cobalt); }
+  .wrap {
+    max-width: 1408px;
+    margin: 0 auto;
+    padding: 96px;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+  }
+  /* HEADER */
+  .eyebrow {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+  }
+  .eyebrow .dot { width: 8px; height: 8px; background: var(--cobalt); border-radius: 50%; display: inline-block; }
+  .head {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 48px;
+    margin-top: 24px;
+  }
+  .head h1 {
+    font-family: 'Archivo Black', system-ui, sans-serif;
+    font-size: 288px;
+    line-height: 240px;
+    letter-spacing: -0.04em;
+    margin: 0;
+  }
+  .head .meta { text-align: right; display: flex; flex-direction: column; gap: 8px; }
+  .meta .date {
+    font-weight: 500;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    color: var(--mute);
+    text-transform: uppercase;
+  }
+  .meta .stats { font-family: 'JetBrains Mono', monospace; font-size: 14px; line-height: 22px; }
+  /* THESIS */
+  .thesis { display: flex; align-items: stretch; gap: 0; }
+  .thesis .strip { width: 8px; background: var(--cobalt); flex-shrink: 0; }
+  .thesis .body { padding: 32px 40px; display: flex; flex-direction: column; gap: 16px; }
+  .thesis .label {
+    font-weight: 500; font-size: 11px; letter-spacing: 0.2em;
+    color: var(--cobalt); text-transform: uppercase;
+  }
+  .thesis h2 {
+    font-family: 'Archivo Black', system-ui, sans-serif;
+    font-size: 48px; line-height: 54px; letter-spacing: -0.02em; margin: 0;
+  }
+  /* SECTION HEAD */
+  .section-head {
+    display: flex; align-items: baseline; justify-content: space-between;
+    border-bottom: 1px solid var(--hair); padding-bottom: 12px;
+  }
+  .section-head h3 {
+    font-family: 'Archivo Black', system-ui, sans-serif;
+    font-size: 32px; line-height: 36px; letter-spacing: -0.02em; margin: 0;
+  }
+  .section-head .meta {
+    font-weight: 500; font-size: 11px; letter-spacing: 0.2em;
+    color: var(--mute); text-transform: uppercase;
+  }
+  /* HERO CARD */
+  .hero {
+    display: flex; gap: 48px; padding: 40px 0;
+    border-top: 2px solid var(--ink); border-bottom: 1px solid var(--hair);
+    align-items: flex-start;
+  }
+  .hero .rank { display: flex; flex-direction: column; gap: 8px; width: 140px; flex-shrink: 0; }
+  .hero .rank .num {
+    font-family: 'Archivo Black', system-ui, sans-serif;
+    font-size: 96px; line-height: 84px; letter-spacing: -0.04em;
+  }
+  .plat { display: flex; align-items: center; gap: 8px; font-weight: 500; font-size: 11px; letter-spacing: 0.2em; color: var(--mute); text-transform: uppercase; }
+  .plat .pdot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; }
+  .hero .body { flex: 1; display: flex; flex-direction: column; gap: 20px; }
+  .hero h4 {
+    font-family: 'Archivo Black', system-ui, sans-serif;
+    font-size: 56px; line-height: 60px; letter-spacing: -0.02em; margin: 0;
+  }
+  .hero p { font-size: 18px; line-height: 28px; max-width: 880px; margin: 0; }
+  .hero .row { display: flex; gap: 32px; align-items: center; }
+  .stat .v { font-family: 'JetBrains Mono', monospace; font-size: 32px; line-height: 36px; }
+  .stat .l { font-weight: 500; font-size: 10px; letter-spacing: 0.18em; color: var(--mute); text-transform: uppercase; }
+  .hero .attr { flex: 1; text-align: right; }
+  .hero .attr .who { font-weight: 600; font-size: 14px; }
+  .hero .attr .when { font-size: 12px; color: var(--mute); }
+  /* TOP-VIRAL GRID */
+  .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; }
+  .card {
+    display: flex; flex-direction: column; gap: 16px; padding: 28px 0;
+    border-top: 1px solid var(--ink);
+  }
+  .card .head-row { display: flex; justify-content: space-between; align-items: baseline; }
+  .card .num {
+    font-family: 'Archivo Black', system-ui, sans-serif;
+    font-size: 48px; line-height: 42px;
+  }
+  .card h5 {
+    font-family: 'Archivo Black', system-ui, sans-serif;
+    font-size: 22px; line-height: 26px; letter-spacing: -0.01em; min-height: 78px; margin: 0;
+  }
+  .card p { font-size: 13px; line-height: 19px; margin: 0; }
+  .card .row { display: flex; gap: 20px; }
+  .card .stat .v { font-size: 22px; }
+  .card .stat .l { font-size: 9px; }
+  .card .who { font-weight: 600; font-size: 12px; }
+  /* CLUSTERS */
+  .clusters { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; }
+  .cluster {
+    display: flex; flex-direction: column; gap: 18px; padding: 32px;
+    background: var(--panel);
+  }
+  .cluster .header-row { display: flex; align-items: baseline; justify-content: space-between; }
+  .cluster .label {
+    font-family: 'Archivo Black', system-ui, sans-serif;
+    font-size: 14px; letter-spacing: 0.18em; color: var(--cobalt);
+  }
+  .cluster .meta { font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--mute); }
+  .cluster h4 {
+    font-family: 'Archivo Black', system-ui, sans-serif;
+    font-size: 30px; line-height: 34px; letter-spacing: -0.02em; margin: 0;
+  }
+  .cluster p { font-size: 14px; line-height: 21px; margin: 0; }
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; }
+  .chip {
+    font-family: 'JetBrains Mono', monospace; font-size: 11px;
+    background: #FFFFFF; padding: 4px 10px; border: 1px solid var(--hair);
+    text-decoration: none;
+  }
+  .chip:hover { background: #FAFAFA; }
+  /* FOOTER */
+  footer {
+    display: flex; flex-direction: column; gap: 24px;
+    border-top: 2px solid var(--ink); padding-top: 32px;
+  }
+  footer .head-row {
+    display: flex; justify-content: space-between; align-items: baseline;
+  }
+  footer h3 {
+    font-family: 'Archivo Black', system-ui, sans-serif;
+    font-size: 24px; line-height: 28px; letter-spacing: -0.02em; margin: 0;
+  }
+  footer .source-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 24px; }
+  footer .source {
+    display: flex; flex-direction: column; gap: 6px; padding-top: 12px;
+    border-top: 1px solid var(--hair);
+  }
+  footer .source .n { font-family: 'JetBrains Mono', monospace; font-size: 24px; }
+  footer .source .sub { font-size: 11px; color: var(--mute); }
+  footer .voices {
+    display: flex; justify-content: space-between; align-items: center;
+    padding-top: 24px; border-top: 1px solid var(--hair); gap: 16px;
+  }
+  footer .voices .left { font-size: 12px; color: var(--mute); line-height: 18px; }
+  footer .voices .right { font-size: 11px; font-weight: 600; text-align: right; }
+  /* LINKS */
+  .links { display: flex; flex-direction: column; gap: 24px; padding-top: 32px; border-top: 2px solid var(--ink); }
+  .links .head-row { display: flex; align-items: baseline; justify-content: space-between; }
+  .links h3 {
+    font-family: 'Archivo Black', system-ui, sans-serif;
+    font-size: 24px; line-height: 28px; letter-spacing: -0.02em; margin: 0;
+  }
+  .links .group { display: flex; flex-direction: column; gap: 0; padding-top: 16px; }
+  .links .group-label {
+    font-weight: 500; font-size: 11px; letter-spacing: 0.2em;
+    color: var(--cobalt); text-transform: uppercase; padding-bottom: 8px;
+  }
+  .links .row {
+    display: flex; gap: 16px; padding: 10px 0; border-top: 1px solid var(--hair);
+    align-items: baseline;
+  }
+  .links .row .ix { width: 32px; font-family: 'JetBrains Mono', monospace; font-size: 13px; color: var(--mute); flex-shrink: 0; }
+  .links .row .title { flex: 1; font-size: 13px; }
+  .links .row a.url {
+    font-family: 'JetBrains Mono', monospace; font-size: 12px;
+    color: var(--cobalt); text-decoration: underline;
+  }
+  /* RESPONSIVE */
+  @media (max-width: 1100px) {
+    .wrap { padding: 48px 32px; gap: 56px; }
+    .head h1 { font-size: 168px; line-height: 144px; }
+    .head { flex-direction: column; align-items: flex-start; gap: 24px; }
+    .head .meta { text-align: left; }
+    .thesis h2 { font-size: 32px; line-height: 38px; }
+    .hero { flex-direction: column; gap: 24px; }
+    .hero h4 { font-size: 36px; line-height: 40px; }
+    .grid { grid-template-columns: 1fr 1fr; }
+    .clusters { grid-template-columns: 1fr; }
+    footer .source-grid { grid-template-columns: repeat(3, 1fr); }
+  }
+  @media (max-width: 640px) {
+    .wrap { padding: 32px 20px; }
+    .head h1 { font-size: 96px; line-height: 84px; }
+    .grid { grid-template-columns: 1fr; }
+    footer .source-grid { grid-template-columns: 1fr 1fr; }
+    .links .row { flex-direction: column; gap: 4px; align-items: flex-start; }
+    .links .row .ix { width: auto; }
+  }
+</style>
+</head>
+<body>
+<main class="wrap">
+
+  <!-- HEADER -->
+  <header>
+    <div class="eyebrow"><span class="dot"></span><span>Viral Radar · AI Coding &amp; Productivity Agents</span></div>
+    <div class="head">
+      <h1>72H</h1>
+      <div class="meta">
+        <div class="date">May 9 → 12, 2026</div>
+        <div class="stats">60 items / 6 sources<br/>14 Reddit · 18 X · 5 TikTok<br/>4 Instagram · 4 HN · 15 GitHub</div>
+      </div>
+    </div>
+  </header>
+
+  <!-- THESIS -->
+  <section class="thesis">
+    <div class="strip"></div>
+    <div class="body">
+      <div class="label">The Week in One Line</div>
+      <h2>Claude Code shipped Agent View — coding is becoming project management, and the tooling layer is exploding underneath.</h2>
+    </div>
+  </section>
+
+  <!-- TOP VIRAL SECTION HEAD -->
+  <div class="section-head">
+    <h3>Top Viral · by Engagement</h3>
+    <div class="meta">Ranked 01 → 06</div>
+  </div>
+
+  <!-- HERO CARD #1 -->
+  <article class="hero">
+    <div class="rank">
+      <div class="num">01</div>
+      <div class="plat"><span class="pdot" style="background:var(--ig)"></span>Instagram</div>
+    </div>
+    <div class="body">
+      <h4>“Bad, good, great” — a one-minute taxonomy of every AI tool category.</h4>
+      <p>Dan Martell rifles through brainstorming, research, coding, automation, image gen, app-building and learning — three picks each. Tightly edited, format-native, and the engagement reflects it.</p>
+      <div class="row">
+        <div class="stat"><div class="v">852,702</div><div class="l">Views</div></div>
+        <div class="stat"><div class="v">20,046</div><div class="l">Likes</div></div>
+        <div class="stat"><div class="v">188</div><div class="l">Comments</div></div>
+        <div class="attr">
+          <div class="who"><a href="https://www.instagram.com/reel/DYH0XCihNKC/">@danmartell</a></div>
+          <div class="when">May 9, 2026 · <a href="https://www.instagram.com/reel/DYH0XCihNKC/">instagram.com/reel/DYH0XCihNKC</a></div>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <!-- TOP VIRAL GRID -->
+  <section class="grid">
+    <article class="card">
+      <div class="head-row"><div class="num">02</div><div class="plat"><span class="pdot" style="background:var(--tiktok)"></span>TikTok</div></div>
+      <h5>“Claude Code + Codex = AI coding superpowers”</h5>
+      <p>Pairs the two strongest coding agents — Codex plans, Claude builds. The 10×-output framing is doing numbers.</p>
+      <div class="row">
+        <div class="stat"><div class="v">118,201</div><div class="l">Views</div></div>
+        <div class="stat"><div class="v">4,957</div><div class="l">Likes</div></div>
+        <div class="stat"><div class="v">569</div><div class="l">Cmts</div></div>
+      </div>
+      <div class="who"><a href="https://www.tiktok.com/@taki.gpt/video/7637923987321785601">@taki.gpt</a> · May 9</div>
+    </article>
+
+    <article class="card">
+      <div class="head-row"><div class="num">03</div><div class="plat"><span class="pdot" style="background:var(--hn)"></span>Hacker News</div></div>
+      <h5>An AI coding agent needs to reduce your maintenance costs.</h5>
+      <p>James Shore reframes the bar: writing code is the easy part — agents have to lower the long-tail cost or they're a net liability.</p>
+      <div class="row">
+        <div class="stat"><div class="v">347</div><div class="l">Points</div></div>
+        <div class="stat"><div class="v">101</div><div class="l">Cmts</div></div>
+      </div>
+      <div class="who"><a href="https://www.jamesshore.com/v2/blog/2026/you-need-ai-that-reduces-your-maintenance-costs">jamesshore.com</a> · May 10</div>
+    </article>
+
+    <article class="card">
+      <div class="head-row"><div class="num">04</div><div class="plat"><span class="pdot" style="background:var(--reddit)"></span>r/AI_Agents</div></div>
+      <h5>“Stop building AI agents.” The contrarian Reddit thread of the week.</h5>
+      <p>Top comment: “Loom video shows the happy path; nobody shows the 3 am Slack when the agent starts approving wrong invoices.”</p>
+      <div class="row">
+        <div class="stat"><div class="v">114</div><div class="l">Upvotes</div></div>
+        <div class="stat"><div class="v">53</div><div class="l">Cmts</div></div>
+      </div>
+      <div class="who"><a href="https://www.reddit.com/r/AI_Agents/comments/1taei9m/stop_building_ai_agents/">u/Peter_Storm</a> · May 11</div>
+    </article>
+
+    <article class="card">
+      <div class="head-row"><div class="num">05</div><div class="plat"><span class="pdot" style="background:var(--ig)"></span>Instagram</div></div>
+      <h5>“Every agent tutorial felt like a toy — this just changed.”</h5>
+      <p>Systems-engineer creator on production agents. Comments outpace likes 6:1 — people are asking how to actually ship.</p>
+      <div class="row">
+        <div class="stat"><div class="v">10,315</div><div class="l">Views</div></div>
+        <div class="stat"><div class="v">599</div><div class="l">Cmts</div></div>
+      </div>
+      <div class="who"><a href="https://www.instagram.com/reel/DYKYsWIT9sC/">@systemsbyakshay</a> · May 10</div>
+    </article>
+
+    <article class="card">
+      <div class="head-row"><div class="num">06</div><div class="plat"><span class="pdot" style="background:var(--tiktok)"></span>TikTok</div></div>
+      <h5>Codex as a business operating system — 10× output, no headcount.</h5>
+      <p>“Comment Codex and I'll send you the framework.” The agent-as-COO meme is fully formed — wired into Google Workspace + notetakers.</p>
+      <div class="row">
+        <div class="stat"><div class="v">669</div><div class="l">Views</div></div>
+        <div class="stat"><div class="v">38</div><div class="l">Likes</div></div>
+      </div>
+      <div class="who"><a href="https://www.tiktok.com/@itsxiaozeng/video/7638098940147092767">@itsxiaozeng</a> · May 10</div>
+    </article>
+  </section>
+
+  <!-- NARRATIVE CLUSTERS -->
+  <div class="section-head">
+    <h3>Narrative Clusters</h3>
+    <div class="meta">Four threads · cross-platform</div>
+  </div>
+
+  <section class="clusters">
+    <article class="cluster">
+      <div class="header-row"><div class="label">CLUSTER A</div><div class="meta">6+ posts · X · 72h</div></div>
+      <h4>Claude Code Agent View — the dashboard pattern lands.</h4>
+      <p>One screen, every running session, blocked agents float to the top. The thread the whole X dev-tools timeline reposted this week — and the reframe is bigger than the feature: “Claude Code stopped being a coding assistant. It became a command center.”</p>
+      <div class="chips">
+        <a class="chip" href="https://x.com/OpenClawTips/status/2053942571735626218">@OpenClawTips</a>
+        <a class="chip" href="https://x.com/k1rallik/status/2053946261246459950">@k1rallik</a>
+        <a class="chip" href="https://x.com/ShawverTech/status/2053941798104441336">@ShawverTech</a>
+        <a class="chip" href="https://x.com/MikelEcheve/status/2053941923019166103">@MikelEcheve</a>
+        <a class="chip" href="https://x.com/TycheHQ/status/2053967595876024526">@TycheHQ</a>
+        <a class="chip" href="https://x.com/PianzhouC/status/2053974061013995730">@PianzhouC</a>
+      </div>
+    </article>
+
+    <article class="cluster">
+      <div class="header-row"><div class="label">CLUSTER B</div><div class="meta">2 TikToks · 119K views</div></div>
+      <h4>Codex as operating system — agent-as-COO meme is fully formed.</h4>
+      <p>Creators stopped framing coding agents as coding tools. They're wiring Codex into Google Workspace, notetakers, and CRM — running the business end-to-end. The pitch is no longer “better dev tool,” it's “10× headcount.”</p>
+      <div class="chips">
+        <a class="chip" href="https://www.tiktok.com/@taki.gpt/video/7637923987321785601">@taki.gpt 118K views</a>
+        <a class="chip" href="https://www.tiktok.com/@itsxiaozeng/video/7638098940147092767">@itsxiaozeng</a>
+        <a class="chip" href="https://www.tiktok.com/@appbuildersacademy/video/7638767674096454943">@appbuildersacademy</a>
+      </div>
+    </article>
+
+    <article class="cluster">
+      <div class="header-row"><div class="label">CLUSTER C</div><div class="meta">HN 347pts · 3 Reddit threads</div></div>
+      <h4>The counter-narrative — “Your harness is broken, not the model.”</h4>
+      <p>James Shore on HN sets the bar (“agents have to reduce your maintenance costs”). r/AI_Agents leads with “Stop building AI agents.” A practitioner thread quotes: “It force-pushed to main at 2 AM during an automated session. Nobody told it not to.”</p>
+      <div class="chips">
+        <a class="chip" href="https://www.jamesshore.com/v2/blog/2026/you-need-ai-that-reduces-your-maintenance-costs">jamesshore.com</a>
+        <a class="chip" href="https://www.reddit.com/r/AI_Agents/comments/1taei9m/stop_building_ai_agents/">r/AI_Agents</a>
+        <a class="chip" href="https://www.reddit.com/r/PromptEngineering/comments/1ta8fxy/agenttargeted_prompt_injection_is_now_a_viable/">r/PromptEngineering</a>
+      </div>
+    </article>
+
+    <article class="cluster">
+      <div class="header-row"><div class="label">CLUSTER D</div><div class="meta">GitHub · 2,900+ new stars</div></div>
+      <h4>The tooling layer is exploding underneath all of this.</h4>
+      <p>Three repos hit virality in 72h: <b>Agentic Stack</b> (portable .agent/ folder, 1,943 stars), <b>9router</b> (40+ provider proxy with 40% token savings, 942 stars in a day), <b>rooflow</b> (#1 trending on GitHub, 60+ agents that self-improve). The agents are the platform; orchestrators are the new IDE.</p>
+      <div class="chips">
+        <a class="chip" href="https://x.com/chenzeling4/status/2053942841173217426">Agentic Stack 1.9K★</a>
+        <a class="chip" href="https://x.com/conradlotz/status/2053973472150257811">9router 942★/day</a>
+        <a class="chip" href="https://www.tiktok.com/@ai4workingpros/video/7638635288855579918">rooflow #1 trending</a>
+      </div>
+    </article>
+  </section>
+
+  <!-- SOURCE COVERAGE FOOTER -->
+  <footer>
+    <div class="head-row">
+      <h3>Source coverage</h3>
+      <div class="meta" style="font-weight:500;font-size:11px;letter-spacing:0.2em;color:var(--mute);text-transform:uppercase;">last30days v3.2.1 · query: ai coding and productivity agents · since 2026-05-09</div>
+    </div>
+    <div class="source-grid">
+      <div class="source"><div class="plat"><span class="pdot" style="background:var(--reddit)"></span>Reddit</div><div class="n">14</div><div class="sub">293 upvotes · 200 cmt</div></div>
+      <div class="source"><div class="plat"><span class="pdot" style="background:var(--x)"></span>X</div><div class="n">18</div><div class="sub">76 likes · 5 reposts</div></div>
+      <div class="source"><div class="plat"><span class="pdot" style="background:var(--tiktok)"></span>TikTok</div><div class="n">5</div><div class="sub">120K views · 5K likes</div></div>
+      <div class="source"><div class="plat"><span class="pdot" style="background:var(--ig)"></span>Instagram</div><div class="n">4</div><div class="sub">868K views · 20K likes</div></div>
+      <div class="source"><div class="plat"><span class="pdot" style="background:var(--hn)"></span>Hacker News</div><div class="n">4</div><div class="sub">359 points · 101 cmt</div></div>
+      <div class="source"><div class="plat"><span class="pdot" style="background:var(--github)"></span>GitHub</div><div class="n">15</div><div class="sub">9 reactions · 64 cmt</div></div>
+    </div>
+    <div class="voices">
+      <div class="left">Top voices: @k1rallik · @ShawverTech · @OpenClawTips · r/AI_Agents · r/SaaS · r/PromptEngineering · DenisZheng/agents-radar · hashgraph-online/awesome-ai-plugins</div>
+      <div class="right">/last72hours · iharnoor</div>
+    </div>
+  </footer>
+
+  <!-- LINKS APPENDIX -->
+  <section class="links">
+    <div class="head-row">
+      <h3>Links · go look</h3>
+      <div class="meta" style="font-weight:500;font-size:11px;letter-spacing:0.2em;color:var(--mute);text-transform:uppercase;">Every source · clickable</div>
+    </div>
+
+    <div class="group">
+      <div class="group-label">Top viral</div>
+      <div class="row"><div class="ix">01</div><div class="title">@danmartell · “Bad/good/great AI tools”</div><a class="url" href="https://www.instagram.com/reel/DYH0XCihNKC/">instagram.com/reel/DYH0XCihNKC</a></div>
+      <div class="row"><div class="ix">02</div><div class="title">@taki.gpt · Claude Code + Codex superpowers</div><a class="url" href="https://www.tiktok.com/@taki.gpt/video/7637923987321785601">tiktok.com/@taki.gpt/…7637923987321785601</a></div>
+      <div class="row"><div class="ix">03</div><div class="title">James Shore · AI coding agent + maintenance costs</div><a class="url" href="https://www.jamesshore.com/v2/blog/2026/you-need-ai-that-reduces-your-maintenance-costs">jamesshore.com · /you-need-ai-that-reduces-your-maintenance-costs</a></div>
+      <div class="row"><div class="ix">04</div><div class="title">r/AI_Agents · “Stop building AI agents.”</div><a class="url" href="https://www.reddit.com/r/AI_Agents/comments/1taei9m/stop_building_ai_agents/">reddit.com/r/AI_Agents/…1taei9m</a></div>
+      <div class="row"><div class="ix">05</div><div class="title">@systemsbyakshay · production-AI reel</div><a class="url" href="https://www.instagram.com/reel/DYKYsWIT9sC/">instagram.com/reel/DYKYsWIT9sC</a></div>
+      <div class="row"><div class="ix">06</div><div class="title">@itsxiaozeng · Codex as business OS</div><a class="url" href="https://www.tiktok.com/@itsxiaozeng/video/7638098940147092767">tiktok.com/@itsxiaozeng/…7638098940147092767</a></div>
+    </div>
+
+    <div class="group">
+      <div class="group-label">Cluster A · Agent View</div>
+      <div class="row"><div class="ix">X</div><div class="title">@OpenClawTips · “Anthropic added agent view…”</div><a class="url" href="https://x.com/OpenClawTips/status/2053942571735626218">x.com/OpenClawTips/status/2053942571735626218</a></div>
+      <div class="row"><div class="ix">X</div><div class="title">@k1rallik · “Claude Code became a command center”</div><a class="url" href="https://x.com/k1rallik/status/2053946261246459950">x.com/k1rallik/status/2053946261246459950</a></div>
+      <div class="row"><div class="ix">X</div><div class="title">@PianzhouC · pair-programming vs assign-and-walk-away</div><a class="url" href="https://x.com/PianzhouC/status/2053974061013995730">x.com/PianzhouC/status/2053974061013995730</a></div>
+      <div class="row"><div class="ix">X</div><div class="title">@ShawverTech · “smart update… real workspace”</div><a class="url" href="https://x.com/ShawverTech/status/2053941798104441336">x.com/ShawverTech/status/2053941798104441336</a></div>
+      <div class="row"><div class="ix">X</div><div class="title">@MikelEcheve · needs-input / working / completed</div><a class="url" href="https://x.com/MikelEcheve/status/2053941923019166103">x.com/MikelEcheve/status/2053941923019166103</a></div>
+      <div class="row"><div class="ix">X</div><div class="title">@TycheHQ · “sleek new dashboard”</div><a class="url" href="https://x.com/TycheHQ/status/2053967595876024526">x.com/TycheHQ/status/2053967595876024526</a></div>
+    </div>
+
+    <div class="group">
+      <div class="group-label">Cluster D · Tooling layer</div>
+      <div class="row"><div class="ix">X</div><div class="title">@chenzeling4 · Agentic Stack (.agent/ folder, 1.9K★)</div><a class="url" href="https://x.com/chenzeling4/status/2053942841173217426">x.com/chenzeling4/status/2053942841173217426</a></div>
+      <div class="row"><div class="ix">X</div><div class="title">@conradlotz · 9router (40+ provider proxy, 942★/day)</div><a class="url" href="https://x.com/conradlotz/status/2053973472150257811">x.com/conradlotz/status/2053973472150257811</a></div>
+      <div class="row"><div class="ix">TK</div><div class="title">@ai4workingpros · rooflow walkthrough (#1 trending)</div><a class="url" href="https://www.tiktok.com/@ai4workingpros/video/7638635288855579918">tiktok.com/@ai4workingpros/…7638635288855579918</a></div>
+      <div class="row"><div class="ix">R</div><div class="title">r/LocalLLaMA · Caliby vector DB for AI agents</div><a class="url" href="https://www.reddit.com/r/LocalLLaMA/comments/1t7vumj/we_built_and_opensourced_caliby_an_embedded/">reddit.com/r/LocalLLaMA/…1t7vumj</a></div>
+    </div>
+  </section>
+
+</main>
+</body>
+</html>

@@ -122,15 +122,62 @@ Never fill whole cards with platform color. The viz must read as one editorial p
 
 ---
 
-## Step 4 — Wrap up
+## Step 4 — Self-contained HTML mirror (always emit)
+
+Write a standalone HTML file to `$LAST72_OUTPUT_DIR/<topic-slug>-72h-radar.html` that mirrors the Paper artboard 1:1 — same sections, same data, same editorial register, but with every source as a clickable `<a href>`. This is the artifact users actually share (PNGs don't have working links once exported).
+
+**This step runs even when Paper MCP is down.** It's the universal output; Paper is the bonus.
+
+### Structural template
+
+Use `examples/ai-coding-agents-72h-radar.html` from this repo as the canonical structure. The shape must match exactly:
+
+1. `<head>` — Google Fonts preconnect + Archivo Black + Inter Tight + JetBrains Mono (substitute for Paper Mono since that font is Paper-app-only)
+2. Inline `<style>` with CSS variables for `--ink #0A0A0A`, `--mute #6B6B6B`, `--hair #E5E5E5`, `--panel #F7F7F5`, `--cobalt #0029FF`, and platform colors `--x --reddit --hn --ig --tiktok --github`
+3. `<main class="wrap">` container — 1408px max-width, 96px padding, 80px gap, flex column
+4. Body sections in order, matching the Paper build:
+   - `<header>` — eyebrow + 72H display mark + meta block
+   - `<section class="thesis">` — cobalt strip + thesis headline
+   - `<div class="section-head">` "Top Viral · by Engagement"
+   - `<article class="hero">` #1 card
+   - `<section class="grid">` cards #2–#6
+   - `<div class="section-head">` "Narrative Clusters"
+   - `<section class="clusters">` 2×2 cluster lozenges with chip-style source links
+   - `<footer>` source coverage grid
+   - `<section class="links">` "Links · go look" appendix — three grouped lists of clickable URLs
+5. `@media (max-width: 1100px)` and `(max-width: 640px)` breakpoints so it reads on phone
+
+### Link policy
+
+- Every `@handle`, every `r/sub`, every publication, every cluster chip: wrap as `<a href="…">`
+- In the cluster section, use `<a class="chip">` styling — minimal underline only on hover
+- In the links appendix, the URL itself is the link text (in cobalt JetBrains Mono)
+- Headline text in cards is NOT a link — only attribution / source chips / appendix URLs are
+
+### Meta tags
+
+```html
+<title>{TOPIC} — 72h Viral Radar · /last72hours</title>
+<meta name="description" content="What people are saying about {TOPIC} in the last 72 hours — Reddit, X, TikTok, Instagram, Hacker News, GitHub." />
+<meta name="generator" content="/last72hours · https://github.com/iharnoor/last72hours-skill" />
+```
+
+### When Paper MCP is also up
+
+Build the Paper canvas first (Step 3), then write the HTML mirror in Step 4. The HTML and the Paper artboard should be visually equivalent — same content, same hierarchy. The two outputs serve different audiences: PNG is for screenshots/decks, HTML is for sharing in Slack/email/DMs where the links matter.
+
+---
+
+## Step 5 — Wrap up
 
 End your response with:
-- Path to the raw Markdown
-- Path to the exported PNG (if built)
+- Path to the raw Markdown scrape
+- Path to the HTML mirror (always)
+- Path to the exported PNG (if Paper MCP was up)
 - 3–5 bullet `Top viral signals` summary with engagement numbers
 - 3–4 `Narrative clusters` one-liners
 
-Do NOT trail with a `Sources:` block — the appendix in the Paper artboard and the engine footer in the raw `.md` are the citation.
+Do NOT trail with a `Sources:` block — the HTML's Links appendix, the Paper artboard's appendix, and the engine footer in the raw `.md` are the citation.
 
 ---
 
