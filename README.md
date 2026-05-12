@@ -8,6 +8,12 @@ A Claude Code skill that runs a **72-hour viral radar** across Reddit, X, TikTok
 /last72hours kanye west
 ```
 
+## Example output
+
+`/last72hours AI coding and productivity agents` (run 2026-05-11, 60 items across 6 sources in 110 s):
+
+![Example: AI Coding & Productivity Agents — 72h Viral Radar](examples/ai-coding-agents-72h-radar.png)
+
 ## What you get
 
 1. A 72-hour scrape of the topic across 7 sources, saved as Markdown
