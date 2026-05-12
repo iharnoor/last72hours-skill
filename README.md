@@ -41,6 +41,22 @@ ln -s ~/.last72hours-skill/skills/last72hours ~/.claude/skills/last72hours
 claude mcp add paper --transport http http://127.0.0.1:29979/mcp --scope user
 ```
 
+## Reddit + X fast lane (subagent)
+
+For a faster, free pulse — skipping the paid ScrapeCreators sources and the Paper canvas — the repo ships a focused subagent at `agents/last72-reddit-x.md`.
+
+```bash
+# install
+ln -s ~/Developer/last72hours-skill/agents/last72-reddit-x.md \
+      ~/.claude/agents/last72-reddit-x.md
+```
+
+Then in Claude Code:
+
+> Use the `last72-reddit-x` subagent to scan AI coding agents.
+
+It runs the same 72h engine but restricted to `--search reddit,x`, writes an HTML mirror, and returns a tight ranked summary. No IG, no TikTok, no Paper Desktop dependency.
+
 ## Configuration
 
 Set up an `.env` somewhere on disk (the skill will look in `$LAST72_ENV` first, then `$PWD/.env`):
